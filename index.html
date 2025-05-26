@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Create!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./photo_2025-05-26_21-53-55.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: brightness(0.8);
+    }
+
+    .button-group {
+      display: flex;
+      gap: 40px;
+      margin-top: 350px; /* Remonte le groupe de boutons */
+      margin-bottom: 40px;
+    }
+
+    .icon-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .icon-button img {
+      width: 100px; /* Agrandissement */
+      height: 100px;
+      transition: transform 0.2s;
+    }
+
+    .icon-button:hover img {
+      transform: scale(1.1);
+    }
+
+    .decorative-images {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .decorative-images img {
+      width: 140px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .decorative-images img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="button-group">
+    <button class="icon-button" onclick="window.open('https://t.me/votre_chaine', '_blank')">
+      <img src="telegram.png" alt="Telegram">
+    </button>
+    <button class="icon-button" onclick="window.open('https://votre-lien-owl.com', '_blank')">
+      <img src="insta.png" alt="Chouette">
+    </button>
+      <button class="icon-button" onclick="window.open('https://x.com/ghettodoggybnb?s=21&t=qVNq3CO0-rz-37R2PLCnBg', '_blank')">
+      <img src="twitter.png" alt="Chouette">
+    </button>
+    <button class="icon-button" onclick="window.open('https://votre-lien-owl.com', '_blank')">
+      <img src="dex.png" alt="Chouette">
+    </button>
+
+  </div>
+
+
+
+</body>
+</html>
