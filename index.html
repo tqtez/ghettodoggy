@@ -18,14 +18,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       backdrop-filter: brightness(0.8);
     }
 
     .button-group {
       display: flex;
-      gap: 40px;
-      margin-top: 350px; /* Remonte le groupe de boutons */
-      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      max-width: 90%;
     }
 
     .icon-button {
@@ -36,8 +39,8 @@
     }
 
     .icon-button img {
-      width: 100px; /* Agrandissement */
-      height: 100px;
+      width: 80px;
+      height: 80px;
       transition: transform 0.2s;
     }
 
@@ -49,13 +52,13 @@
       position: absolute;
       bottom: 20px;
       display: flex;
-      gap: 30px;
+      gap: 20px;
       justify-content: center;
       width: 100%;
     }
 
     .decorative-images img {
-      width: 140px;
+      width: 100px;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -64,6 +67,22 @@
 
     .decorative-images img:hover {
       transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .icon-button img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .decorative-images img {
+        width: 80px;
+      }
+
+      .button-group {
+        gap: 20px;
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
@@ -74,13 +93,13 @@
       <img src="telegram.png" alt="Telegram">
     </button>
     <button class="icon-button" onclick="window.open('https://www.ghettodoggy.com/', '_blank')">
-      <img src="insta.png" alt="Chouette">
+      <img src="insta.png" alt="Instagram">
     </button>
-      <button class="icon-button" onclick="window.open('https://x.com/ghettodoggybnb?s=21&t=qVNq3CO0-rz-37R2PLCnBg', '_blank')">
-      <img src="twitter.png" alt="Chouette">
+    <button class="icon-button" onclick="window.open('https://x.com/ghettodoggybnb?s=21&t=qVNq3CO0-rz-37R2PLCnBg', '_blank')">
+      <img src="twitter.png" alt="Twitter">
     </button>
     <button class="icon-button" onclick="window.open('https://votre-lien-owl.com', '_blank')">
-      <img src="dex.png" alt="Chouette">
+      <img src="dex.png" alt="Dex">
     </button>
   </div>
 </body>
